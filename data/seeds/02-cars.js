@@ -1,4 +1,3 @@
-// STRETCH
 
 exports.seed = function(knex) {
   // Deletes ALL existing entries
@@ -6,10 +5,7 @@ exports.seed = function(knex) {
     .then(function () {
       // Inserts seed entries
       return knex('cars').insert([
-        {vin: '5N1AT2MT2EC871947',
-        make: 'chevy', 
-        model:'equinox', 
-        mileage: '123123'},
+        {vin: '3D7KS29C77G767447', make: 'ford', model: 'focus', mileage: '123123'}
       ]);
     });
 };
